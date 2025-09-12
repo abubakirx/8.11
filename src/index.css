@@ -1,0 +1,42 @@
+/* css import */
+@import "./css/buttons.css";
+@import "./css/Fonts.css";
+@import "./css/varibilis.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-preset-6);
+  line-height: var(--lh-preset-6);
+  background-color: var(--color-neutral-100);
+  font-weight: 500;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

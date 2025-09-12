@@ -1,0 +1,16 @@
+.btn {
+  border-radius: 1rem;
+  padding: 16px 32px;
+  font-size: var(--font-size-preset-5);
+  color: var(--color-neutral-0);
+  background-color: var(--color-neutral-900);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--color-neutral-600);
+}
+.btn:active {
+  outline: 2px solid var(--color-neutral-900);
+  outline-offset: 1px;
+  background-color: var(--color-neutral-900);
+}
