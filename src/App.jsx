@@ -1,15 +1,7 @@
-//react-router-dom
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
-//pages
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayout from "./layout/MainLayout";
 import { About, Home, Recipe, Recipes } from "./pages";
-
-// main Layout
-import MainLayout from "./layouts/MainLayout";
-import { actioc } from "./pages/Home";
+import CreateRecipe from "./pages/CreateRecipe";
 
 function App() {
   const routes = createBrowserRouter([
@@ -17,23 +9,11 @@ function App() {
       path: "/",
       element: <MainLayout />,
       children: [
-        {
-          index: true,
-          element: <Home />,
-          action: actioc,
-        },
-        {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "/recipe/:id",
-          element: <Recipe />,
-        },
-        {
-          path: "/recipes",
-          element: <Recipes />,
-        },
+        { index: true, element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/recipes", element: <Recipes /> },
+        { path: "/recipe/:id", element: <Recipe /> },
+        { path: "/create", element: <CreateRecipe /> },
       ],
     },
   ]);
